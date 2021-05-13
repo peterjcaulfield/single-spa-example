@@ -2,6 +2,8 @@
   "name": "@acme/root-config",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
+    "start-micro:a": "(cd page-a && npm run start)",
+    "start-micro:b": "(cd page-b && npm run start)",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
